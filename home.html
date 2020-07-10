@@ -30,7 +30,7 @@
     </div>
 
     <div class="secondHead">
-        <h1 id="credoName"> Credo Primary School</h1>
+        <h1 id="credoName"> <a href="home.html">Credo Primary School </a></h1>
         <div class="search-container">
             <form>
                 <input class="src" type="text" placeholder="Search.." name="search">
@@ -53,6 +53,89 @@
             </li>
         </ul>
     </div>
+
+    <div id="covidResponse">
+        <a id="covid"> COVID-19</a>
+        <a id="resources" style="text-align: left;"> SCHOOL UPDATES AND RESOURCES</a>
+
+    </div>
+
+    <div class="homeImage">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="pic7.jpg" style="width:100%; height: 400px;">
+                <div class="text">Caption One</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="pic1.jpg" style="width:100%; height: 400px;">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="pic3.jpg" style="width:100% ; height: 400px;">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="pic4.jpg" style="width:100%; height: 400px;">
+                <div class="text">Caption Four</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="pic5.jpg" style="width:100%; height: 400px;">
+                <div class="text">Caption Five</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="pic6.jpg" style="width:100%; height: 400px;">
+                <div class="text">Caption Six</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
 
 </body>
 
