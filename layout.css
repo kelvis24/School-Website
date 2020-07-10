@@ -1,0 +1,54 @@
+.homeBody {
+    height: 1000px;
+    margin: 0px;
+    font: Arial;
+}
+
+.blackHead {
+    background-color: black;
+    height: auto;
+    position: relative;
+}
+
+a#credo {
+    padding-left: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+a#index {
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+a#directory {
+    padding-left: 750px;
+    color: white;
+    text-decoration: none;
+}
+
+a#maps {
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+a#safety {
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+a#sign-ons {
+    padding-left: 10px;
+    padding-right: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.secondHead {
+    background-color: blue;
+    height: 150px;
+    position: relative;
+}
